@@ -1,0 +1,32 @@
+{
+  "name": "soul-client",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@radix-ui/themes": "^2.0.0",
+    "@reduxjs/toolkit": "^1.9.7",
+    "axios": "^1.5.1",
+    "bufferutil": "^4.0.8",
+    "next": "latest",
+    "react": "latest",
+    "react-calendar": "^4.6.0",
+    "react-dom": "latest",
+    "react-loading": "^2.0.3",
+    "react-redux": "^8.1.3",
+    "sass": "^1.69.0",
+    "socket.io-client": "^4.7.2",
+    "utf-8-validate": "^5.0.10",
+    "uuid": "^9.0.1",
+    "ws": "^8.14.2"
+  },
+  "devDependencies": {
+    "eslint": "latest",
+    "eslint-config-next": "latest"
+  }
+}

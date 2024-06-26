@@ -1,0 +1,27 @@
+.authButton {
+    width: 100%;
+    padding: 10px 5px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+
+    transition: all 0.3s;
+}
+
+.authButton_signIn {
+    background: #0cc218;
+
+    &:hover {
+        background: #07890f;
+    }
+}
+
+.authButton_signUp {
+    background: #a62f43;
+
+    &:hover {
+        background: #781627;
+    }
+}

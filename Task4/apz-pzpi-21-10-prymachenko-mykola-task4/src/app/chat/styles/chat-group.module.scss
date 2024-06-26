@@ -1,0 +1,29 @@
+@import "src/styles/mixins";
+
+.chat {
+    @include flexCenter();
+    justify-content: flex-start;
+    width: 100%;
+    gap: 15px;
+    background: #272732;
+    padding: 10px;
+    transition: all 0.2s;
+    cursor: pointer;
+
+    &:hover {
+        background: #343440;
+    }
+}
+
+.active {
+    background: #354759;
+
+    &:hover {
+        background: #354759;
+    }
+}
+
+.chat__avatar {
+    width: 60px;
+    height: 60px;
+}

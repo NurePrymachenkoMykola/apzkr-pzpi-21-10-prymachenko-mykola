@@ -1,0 +1,30 @@
+@import "src/styles/mixins";
+
+.months__nav {
+    @include flexCenter();
+    width: 100%;
+    margin: 40px 0 50px;
+}
+.month__title {
+    text-align: center;
+    font-size: 28px;
+    color: #b1caee;
+    width: 170px;
+}
+.months__nav__btn {
+    @include flexCenter();
+    margin: 0 20px;
+    svg {
+        path {
+            transition: all 0.2s;
+        }
+    }
+    &:hover {
+      svg {
+          path {
+              fill: #475659;
+          }
+      }
+    }
+}
+

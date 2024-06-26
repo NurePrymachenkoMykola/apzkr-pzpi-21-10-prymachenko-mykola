@@ -1,0 +1,15 @@
+@import "src/styles/mixins";
+.weekday__list {
+    list-style: none;
+    @include flexCenter();
+    width: 100%;
+}
+
+.weekday {
+    @include flexCenter();
+    flex: calc(100% / 7);
+    font-size: 26px;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: MalOtf, serif;
+}

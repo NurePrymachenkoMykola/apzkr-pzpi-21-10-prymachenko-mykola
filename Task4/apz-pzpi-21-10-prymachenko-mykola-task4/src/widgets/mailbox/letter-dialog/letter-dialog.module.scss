@@ -1,0 +1,37 @@
+@import 'src/styles/mixins';
+@import 'src/styles/variables';
+
+.dialog {
+    @include flexCenter(true);
+    justify-content: space-between;
+    width: 100%;
+    gap: 15px;
+    padding: 20px 40px;
+    border-radius: 10px;
+    background: $form-bg;
+    max-width: 600px;
+}
+
+.letter__title {
+    font-size: 32px;
+}
+
+.dialog__features {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.dialog__choices {
+    @include flexCenter();
+    gap: 20px;
+}
+
+.dialog__content {
+    @include flexCenter(true);
+    width: 100%;
+    gap: 15px;
+    margin: 15px 0 20px;
+    p {
+        width: 100%;
+    }
+}

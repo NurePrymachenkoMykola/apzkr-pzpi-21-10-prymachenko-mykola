@@ -1,0 +1,29 @@
+@import 'src/styles/mixins';
+
+.mailbox {
+    min-width: 450px;
+    background: #2f434b;
+    padding: 20px 10px;
+    position: relative;
+    border-radius: 10px;
+    z-index: 100;
+}
+
+.mailbox__title {
+    font-size: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    line-height: 100%;
+    font-family: "Inconsolata Expanded Black", sans-serif;
+    margin-bottom: 10px;
+}
+
+.mailbox__letters {
+    @include flexCenter(true);
+    width: 100%;
+    gap: 10px;
+    overflow-y: auto;
+    max-height: 320px;
+    height: 320px;
+}

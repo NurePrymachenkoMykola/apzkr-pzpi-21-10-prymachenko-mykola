@@ -1,0 +1,54 @@
+@import "src/styles/mixins";
+@import "src/styles/variables";
+
+.contacts {
+    @include flexCenter(true);
+    width: 100%;
+    padding: 100px 10px;
+    background: $main-bg;
+}
+
+.contacts__title_wrapper {
+    margin-bottom: 50px;
+}
+
+.contacts__title {
+    @include sectionTitle();
+}
+
+.contacts__matters {
+    @include flexCenter(true);
+    list-style: none;
+    gap: 10px;
+}
+
+.contacts__matters_title {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.contacts__matters_item {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    svg {
+        min-width: 12px;
+        min-height: 12px;
+        position: relative;
+        top: 8px;
+    }
+}
+
+.contacts__form_title {
+    margin: 70px 0 50px;
+    h2 {
+        text-align: center;
+        font-size: 28px;
+        font-weight: 800;
+    }
+
+    p {
+        text-align: center;
+        font-size: 18px;
+    }
+}

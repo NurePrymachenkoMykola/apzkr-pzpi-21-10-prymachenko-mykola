@@ -1,0 +1,41 @@
+@import "src/styles/mixins";
+
+.authCard {
+    @include flexCenter(true);
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover {
+      scale: 1.1;
+    }
+    min-width: 250px;
+}
+
+.authCard__inner {
+    @include flexCenter(true);
+    width: 100%;
+    padding: 40px 20px;
+}
+
+.authCard__icon {
+    width: 70px;
+    height: 70px;
+
+    svg {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+.authCard__title {
+    font-family: "Inconsolata Black";
+    font-size: 32px;
+    margin: 10px 0;
+}
+
+.authCard__buttons {
+    @include flexCenter(true);
+    width: 100%;
+    margin-top: 40px;
+    gap: 10px
+}

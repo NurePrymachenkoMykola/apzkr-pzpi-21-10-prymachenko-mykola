@@ -1,0 +1,22 @@
+@import "src/styles/mixins";
+
+.form {
+    @include flexCenter();
+    width: 100%;
+    background: inherit;
+}
+
+.form__inner {
+    @include flexCenter(true);
+    gap: 20px;
+    max-width: 50%;
+    width: 100%;
+    background: inherit;
+}
+
+.form__block {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    background: inherit
+}

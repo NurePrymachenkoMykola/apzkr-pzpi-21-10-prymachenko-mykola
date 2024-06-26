@@ -1,0 +1,54 @@
+@import 'src/styles/mixins';
+
+.letter {
+    @include flexCenter(true);
+    justify-content: space-between;
+    width: 100%;
+    gap: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    background: #212e32;
+    transition: all 0.2s;
+    cursor: pointer;
+    &:hover {
+        background: #192427;
+    }
+
+}
+
+.letter__top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.letter__bottom {
+    @include flexCenter();
+    justify-content: space-between;
+    width: 100%;
+}
+.letter__title {
+    font-size: 19px;
+}
+
+.letter__sender {
+    font-size: 18px;
+}
+
+.letter__features {
+    display: flex;
+    gap: 10px;
+}
+.letter__status {
+    min-width: 40px;
+    min-height: 40px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    transition: all 0.2s;
+    padding: 5px;
+
+    &:hover {
+        background: #495055;
+    }
+}

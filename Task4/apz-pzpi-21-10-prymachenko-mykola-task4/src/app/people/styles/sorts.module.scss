@@ -1,0 +1,48 @@
+@import "src/styles/mixins";
+
+.sorts {
+    align-items: flex-start;
+    min-height: 100vh;
+    background: inherit;
+    min-width: 250px;
+}
+
+.sorts__inner {
+    background: inherit;
+}
+
+.sorts__list {
+    @include flexCenter(true);
+    gap: 15px;
+    background: inherit;
+}
+
+.sorts__title {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+    border: 2px solid #6e8a9b;
+    border-radius: 10px;
+}
+
+.sorts__order {
+    display: flex;
+    gap: 20px;
+
+}
+
+.sorts__order_btn {
+    @include flexCenter();
+    padding: 5px;
+    border-radius: 5px;
+    transition: all .2s;
+    background: transparent;
+    &:hover {
+        background: #ffffff20;
+    }
+}
+
+.sorts__order_btn_active {
+    background: rgba(255, 255, 255, 0.19);
+}
+

@@ -1,0 +1,54 @@
+@import "src/styles/mixins";
+
+.person {
+    display: flex;
+    gap: 15px;
+    background: #1d2027;
+    border-radius: 20px;
+    padding: 15px;
+    width: 100%;
+}
+
+.person__avatar {
+    min-width: 70px;
+    min-height: 70px;
+}
+
+.person__info {
+
+}
+
+.person__info_block {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+%person__text {
+    font-size: 16px;
+}
+.person__name {
+    @extend %person__text;
+
+}
+
+.person__surname {
+    @extend %person__text;
+}
+
+.person__role {
+    @extend %person__text;
+}
+
+.person__years {
+    @extend %person__text;
+}
+
+.person__description {
+    margin-top: 15px;
+}
+
+.person__profile__link {
+    max-width: 200px;
+    margin-top: 5px;
+}

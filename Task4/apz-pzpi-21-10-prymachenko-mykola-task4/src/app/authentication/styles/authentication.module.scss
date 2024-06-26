@@ -1,0 +1,52 @@
+@import "src/styles/mixins";
+@import "src/styles/variables";
+
+.authentication {
+    @include flexCenter(true);
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+    z-index: 10000;
+}
+
+.authentication__title {
+    font-size: 48px;
+    margin-bottom: 40px;
+}
+
+.authentication__cards {
+    @include flexCenter();
+    gap: 30px;
+}
+
+.authentication__form {
+    @include flexCenter(true);
+    position: absolute;
+    z-index: 9999;
+    background: $form-bg;
+    border-radius: 15px;
+}
+
+.authentication__form__inner {
+    padding: 50px 80px;
+    background: inherit;
+    border-radius: 20px;
+}
+
+.authentication__form__title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 32px;
+}
+
+.authentication__form__fields {
+    @include flexCenter(true);
+    gap: 15px;
+    background: inherit;
+}
+
+.authentication__form__buttons {
+    @include flexCenter();
+    gap: 10px;
+    margin-top: 20px;
+}

@@ -1,0 +1,14 @@
+@import "src/styles/mixins";
+
+.list {
+    max-width: 350px;
+    width: 100%;
+    padding: 20px 10px;
+    max-height: 700px;
+    overflow: auto;
+}
+
+.list__inner {
+    @include flexCenter(true);
+    margin-top: 40px;
+}

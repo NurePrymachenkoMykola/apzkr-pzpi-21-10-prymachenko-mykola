@@ -1,0 +1,42 @@
+@import "src/styles/variables";
+@import "src/styles/mixins";
+
+.logo {
+    background: inherit;
+
+    a {
+        background: inherit;
+    }
+}
+
+.logo_text {
+    font-size: 75px;
+    font-family: "Inconsolata Expanded Black", serif;
+    letter-spacing: -5px;
+    position: relative;
+    background: inherit;
+    @include flexCenter();
+    justify-content: left;
+    &::before {
+        content: '';
+        background: inherit;
+        width: 50px;
+        height: 50px;
+        left: 30px;
+        border-radius: 50%;
+        position: absolute;
+    }
+
+    &::after {
+        content: '';
+        background: #fff;
+        width: 20px;
+        height: 22px;
+        left: 45px;
+        border-radius: 50%;
+        position: absolute;
+    }
+    span {
+        margin-right: 30px;
+    }
+}

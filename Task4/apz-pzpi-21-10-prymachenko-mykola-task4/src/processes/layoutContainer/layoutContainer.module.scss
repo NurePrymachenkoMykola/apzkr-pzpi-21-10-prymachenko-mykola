@@ -1,0 +1,17 @@
+@import "src/styles/mixins";
+
+.layoutContainer {
+    @include flexCenter();
+    width: 100%;
+}
+
+.layoutContainer__inner {
+    @include flexCenter();
+    width: 100%;
+}
+
+@media screen and (min-width: 1536px) {
+    .layoutContainer__inner {
+        max-width: 1500px;
+    }
+}
